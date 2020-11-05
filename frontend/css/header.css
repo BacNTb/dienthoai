@@ -1,0 +1,276 @@
+.header {
+	background-image: var(--root-color);	
+}
+
+.header__title {
+	justify-content: space-between;
+}
+
+.logo, .search, .cart, .search__small--input {
+	height: 98px;
+}
+
+.logo .logo__home{	
+	line-height: 98px;
+}
+
+.search input {
+	margin-top: 30px;
+	float: left;
+}
+
+.search_text {
+	width: 400px;
+	height: 35px;
+	border: 1px solid var(--white-color);
+	background-color: var(--white-color);
+	color: var(--text-color);
+	font-size: 12px;
+	padding-left: 15px;
+	margin-left: 30px;
+	border-radius: 2px 0 0 2px;
+}
+
+.search_submit {
+	height: 35px;
+	background-color: var(--btn-background);
+	padding: 0 15px;
+	border: 2px solid var(--white-color);
+	color: var(--white-color);
+	font-size: 12px;
+	border-radius: 0 2px 2px 0;
+}	
+
+.cart {			
+	background: url('../img/cart.png') no-repeat center;
+	color: var(--white-color);
+	line-height: 98px;
+	position: relative;
+}
+
+.cart a.display {	
+	color: var(--white-color);
+}
+
+.cart a.display-icon {
+	margin-left: 60px;
+	color: var(--text-color);
+}
+
+.icon-search {
+	position: absolute;
+	top: 0;
+	right: 110%;
+	color: #fff;
+	font-size: 1.4rem;
+	display: none;
+}
+
+.search__small--input {
+	padding: 0 15px;
+	display: none;
+}
+
+.search__small--hide {
+	display: flex;
+	align-items: center;
+	height: 100%;
+
+}
+
+.back__header--title {
+	color: white;
+    border: 1px solid;
+    padding: 8px 30px;
+    margin-right: 20px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.search__small--form  {
+	display: flex;
+	flex: 1;
+}
+
+.search__small--text {
+	flex: 5;
+	height: 35px;
+	border: 1px solid var(--white-color);
+	background-color: var(--white-color);
+	color: var(--text-color);
+	font-size: 12px;
+	padding-left: 15px;
+	border-radius: 2px 0 0 2px;
+}
+
+.search__small--submit {
+	flex: 1;
+	height: 35px;
+	background-color: var(--btn-background);
+	padding: 0 15px;
+	border: 2px solid var(--white-color);
+	color: var(--white-color);
+	font-size: 12px;
+	border-radius: 0 2px 2px 0;
+}
+
+.body__small {
+	display: none;
+	margin-bottom: 30px;
+	padding: 0;
+}
+
+.menu__small {
+	background-color: var(--white-color);
+	font-size: 15px;	
+}
+
+.menu__small--dropdow {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	margin: 0;
+}
+
+.menu__small--list {
+	display: none;
+	list-style-type: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 130%;
+	background-color: var(--background-color);
+	z-index: 20;
+}
+
+.menu__small--item {
+	line-height: 40px;
+    text-transform: capitalize;
+	cursor: pointer;
+	flex: 2;
+	text-align: center;
+	position: relative;
+}
+
+.menu__small--list .menu__small--item {
+	padding-left: 40px;
+	text-align: left;
+}
+
+
+.menu__small--item:hover {
+	transition: ease 0.3s;
+	background-color: var(--background-color);
+}
+
+.menu__small--item a {
+    color: #333;
+    text-decoration: none;
+}
+
+.menu__small--item:hover .menu__small--list {
+	display: block;
+}
+
+.menu__small--list .menu__small--item {
+    border-bottom: 1px solid #fffcfc;
+}
+
+.menu__small--list .menu__small--item:hover {
+	background-color: #bebebe;
+	transition: ease 0.3s;
+}	
+
+.body {
+	margin-top: 15px;
+}
+
+.menu {
+	background-color: var(--white-color);
+	font-size: 15px;	
+}
+
+.menu > ul {
+	margin-bottom: 0;
+}
+
+.menu-list {
+	display: none;
+	background-color: var(--white-color);
+	width: 100%;
+}
+
+.menu-list .menu-item {
+	margin-left: 0;
+}
+
+.active {
+	background-color: var(--background-color);
+}
+
+.active > .menu-list {
+	display: block;
+	background-color: var(--background-color--white);
+}
+
+.menu-item {
+	list-style-type: none;
+	line-height: 40px;
+    border-bottom: 2px solid #f5f4f4;
+    text-transform: capitalize;
+	cursor: pointer;
+}
+
+.menu-item:last-child {
+	border: none;
+	margin-bottom: 40px;
+}
+
+.menu-item:hover {
+	background-color: var(--background-color);
+}
+
+.menu-item a {
+    color: #333;
+    text-decoration: none;
+    width: 100%;
+    padding-left: 15px;
+}
+
+.menu-list .menu-item {
+    border-bottom: 2px solid #fffcfc;
+}
+
+.menu-list .menu-item:hover {
+	background-color: var(--white-color);
+	transition: ease 0.3s;
+}
+
+.menu-list .menu-item a {
+	padding-left: 35px;
+}
+
+.menu-list .menu-item:last-child {
+	margin-bottom: 0;
+	border: none;
+}
+
+.menu-item.list-item {
+	text-align: center;
+	background-color: #d4d4d4;
+}
+
+.banner-l-item {
+	margin-top: 15px;
+	max-width: 100%;
+}
+
+.banner-l-item img {
+	border: none;
+	padding: 0;
+	border-radius: 0;
+}
+
+.carousel-item img {
+	width: 100%;
+}

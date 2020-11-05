@@ -1,0 +1,21 @@
+:root {
+    --root-color: linear-gradient(-180deg,#f53d2d,#f63);
+    --white-color: #fff;
+    --text-color: #afaeae;
+    --btn-background: #fb5533;
+    --background-color: #e6e6e6;
+    --background-color--white: #eeeeee;
+    --price-color: #ce0000;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: arial;
+	font-size: 14px;
+	color: #666;
+	background-color: #f0f0f0;
+}
